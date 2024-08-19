@@ -26,7 +26,7 @@ public class RttTask {
     private String ossSecretKey = System.getenv("OSS_SECRET_KEY"); 
     private String ossAccessKey = System.getenv("OSS_ACCESS_KEY");
     private String ossBucketName = System.getenv("OSS_BUCKET_NAME"); 
-    private static final String baseUrl = "https://service-staging.agora.io/speech-to-text";
+    private static final String baseUrl = "https://service-staging.agora.io";
 //    private static final String baseUrl = "https://api.agora.io";
 
     // Authorization header for HTTP requests
