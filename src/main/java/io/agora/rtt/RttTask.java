@@ -17,17 +17,18 @@ import java.util.Base64;
 public class RttTask {
 
     // Agora ID and security parameters
-    private static final String appId = System.getenv("APP_ID"); 
-    private static final String appCertificate = System.getenv("APP_CERTIFICATE"); 
-    private static final String customerId = System.getenv("CUSTOMER_ID"); 
-    private static final String customerSecret = System.getenv("CUSTOMER_SECRET"); 
+    private static final String appId = System.getenv("ebb0da7fa61e44e38a1733fae6ded3fc");
+    private static final String appCertificate = System.getenv("cab65b54fdaa4e62a5105241df0be8e3");
+    private static final String customerId = System.getenv("202f3abca2314894ad714608c3ec8403");
+    private static final String customerSecret = System.getenv("c72120ce4a334cf6832d58498e6b48d6");
 
     // Cloud storage parameters
     private String ossSecretKey = System.getenv("OSS_SECRET_KEY"); 
     private String ossAccessKey = System.getenv("OSS_ACCESS_KEY");
     private String ossBucketName = System.getenv("OSS_BUCKET_NAME"); 
-    private static final String baseUrl = "https://api.agora.io";
-    
+    private static final String baseUrl = "https://service-staging.agora.io/speech-to-text";
+//    private static final String baseUrl = "https://api.agora.io";
+
     // Authorization header for HTTP requests
     private static final String authorizationHeader = "Basic " + new String(Base64.getEncoder()
             .encode((customerId + ":" + customerSecret).getBytes()));;
